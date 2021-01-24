@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
 }
+
 body {
     background-color: #ffffff;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -17,6 +18,7 @@ body {
 
 }
 nav {
+    margin-top: 50px;
     height: 100px;
     align-items: center;
     justify-content: space-evenly;
@@ -45,6 +47,11 @@ nav {
 }
 h1 {
     font-weight: 400;
+}
+.intro h1:hover {
+    border-bottom: 1px solid black;
+    transition: 1ms;
+    cursor: pointer;
 }
 p {
     font-size: 1em;
@@ -126,14 +133,25 @@ input[type='checkbox']:checked + .switch {
     background-color: #ffffff;
     padding: 8px;
     width: 150px;
-    border: 2px solid rgb(156, 50, 23);
+    border: 2px solid #b108a3;
     border-radius: 5px;
     text-align: center;
     color: rgb(156, 50, 23);
+    transition: 10ms;
+
 }
 .mail:hover {
-    color: white;
+    background-color: #cf63dd;
     cursor: pointer;
-    background-color: purple;
-    transition: 1s;
 }
+.mail a{
+    text-decoration: none;
+    color: #b108a3;
+}
+.mail a:hover{
+    cursor: pointer;
+    color: #27032c;
+    
+}
+
+
